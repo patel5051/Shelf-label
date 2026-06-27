@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- PreferenceFragment container -->
+    <FrameLayout
+        android:id="@+id/settings_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Test print button at bottom -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_test_print"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/test_print"
+        android:layout_margin="16dp"
+        style="@style/Widget.Material3.Button.OutlinedButton" />
+
+</LinearLayout>

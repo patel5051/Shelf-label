@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.Material3.HeadlineMedium"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_subtitle"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:textColor="@color/on_surface_variant"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Recent bulk jobs summary card — hidden when no jobs exist -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_recent_bulk_jobs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/home_recent_bulk_jobs_title"
+                        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+                        android:textColor="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/tv_see_all_bulk_jobs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/home_see_all"
+                        android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+                        android:textColor="@color/primary"
+                        android:padding="4dp" />
+
+                </LinearLayout>
+
+                <!-- Divider under header -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/on_surface_variant"
+                    android:alpha="0.12"
+                    android:layout_marginBottom="4dp" />
+
+                <!-- Row for most-recent job -->
+                <LinearLayout
+                    android:id="@+id/row_recent_job_0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_recent_job_0_timestamp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+                            android:textColor="@color/on_surface_variant" />
+
+                        <TextView
+                            android:id="@+id/tv_recent_job_0_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                            android:layout_marginTop="2dp" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_recent_reprint_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_reprint"
+                        android:textSize="13sp"
+                        style="@style/Widget.Material3.Button.TonalButton"
+                        app:icon="@android:drawable/ic_menu_print" />
+
+                </LinearLayout>
+
+                <!-- Thin divider between rows -->
+                <View
+                    android:id="@+id/divider_recent_jobs"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/on_surface_variant"
+                    android:alpha="0.12"
+                    android:visibility="gone" />
+
+                <!-- Row for second most-recent job -->
+                <LinearLayout
+                    android:id="@+id/row_recent_job_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_recent_job_1_timestamp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+                            android:textColor="@color/on_surface_variant" />
+
+                        <TextView
+                            android:id="@+id/tv_recent_job_1_stats"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+                            android:layout_marginTop="2dp" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_recent_reprint_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_reprint"
+                        android:textSize="13sp"
+                        style="@style/Widget.Material3.Button.TonalButton"
+                        app:icon="@android:drawable/ic_menu_print" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_modisoft_sync"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/btn_modisoft_sync"
+            android:textSize="18sp"
+            app:icon="@android:drawable/ic_popup_sync"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.Material3.Button.ElevatedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_scan_item"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/btn_scan_item"
+            android:textSize="18sp"
+            app:icon="@android:drawable/ic_menu_camera"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.Material3.Button.ElevatedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_search_items"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/btn_search_items"
+            android:textSize="18sp"
+            app:icon="@android:drawable/ic_menu_search"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.Material3.Button.ElevatedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_import_csv"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/btn_import_csv"
+            android:textSize="18sp"
+            app:icon="@android:drawable/ic_menu_upload"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.Material3.Button.ElevatedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_print_queue"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/btn_print_queue"
+            android:textSize="18sp"
+            app:icon="@android:drawable/ic_menu_manage"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.Material3.Button.ElevatedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_print_history"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/btn_print_history"
+            android:textSize="18sp"
+            app:icon="@android:drawable/ic_menu_recent_history"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.Material3.Button.ElevatedButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_settings"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:text="@string/btn_settings"
+            android:textSize="18sp"
+            app:icon="@android:drawable/ic_menu_preferences"
+            style="@style/Widget.Material3.Button.OutlinedButton" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- ── Label / Store settings ─────────────────────────────────────── -->
+    <PreferenceCategory android:title="Label Settings">
+
+        <EditTextPreference
+            android:key="pref_store_name"
+            android:title="@string/pref_title_store_name"
+            android:summary="@string/pref_summary_store_name"
+            android:defaultValue="MY STORE"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="pref_currency_symbol"
+            android:title="@string/pref_title_currency"
+            android:defaultValue="$"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="pref_label_width_mm"
+            android:title="@string/pref_title_label_width"
+            android:defaultValue="80"
+            android:inputType="number"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="pref_label_height_mm"
+            android:title="@string/pref_title_label_height"
+            android:defaultValue="40"
+            android:inputType="number"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <!-- ── Barcode & Printing ──────────────────────────────────────────── -->
+    <PreferenceCategory android:title="Barcode &amp; Printing">
+
+        <ListPreference
+            android:key="pref_barcode_type"
+            android:title="@string/pref_title_barcode_type"
+            android:entries="@array/barcode_type_entries"
+            android:entryValues="@array/barcode_type_values"
+            android:defaultValue="CODE128"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            android:key="pref_printer_mode"
+            android:title="@string/pref_title_printer_mode"
+            android:entries="@array/printer_mode_entries"
+            android:entryValues="@array/printer_mode_values"
+            android:defaultValue="receipt"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="pref_default_copies"
+            android:title="@string/pref_title_default_copies"
+            android:defaultValue="1"
+            android:inputType="number"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <!-- ── History ────────────────────────────────────────────────────── -->
+    <PreferenceCategory android:title="@string/pref_cat_history">
+
+        <ListPreference
+            android:key="pref_bulk_history_retention_days"
+            android:title="@string/pref_title_bulk_history_retention"
+            android:summary="@string/pref_summary_bulk_history_retention"
+            android:entries="@array/bulk_history_retention_entries"
+            android:entryValues="@array/bulk_history_retention_values"
+            android:defaultValue="90"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <!-- ── Modisoft Pricebook Sync ─────────────────────────────────────── -->
+    <PreferenceCategory android:title="@string/pref_cat_modisoft">
+
+        <ListPreference
+            android:key="pref_modisoft_sync_mode"
+            android:title="@string/pref_title_modisoft_sync_mode"
+            android:entries="@array/modisoft_sync_mode_entries"
+            android:entryValues="@array/modisoft_sync_mode_values"
+            android:defaultValue="api"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="pref_modisoft_api_base_url"
+            android:title="@string/pref_title_modisoft_api_base_url"
+            android:hint="https://api.modisoft.com/v1"
+            android:inputType="textUri"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="pref_modisoft_store_id"
+            android:title="@string/pref_title_modisoft_store_id"
+            android:hint="e.g. 12345"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="pref_modisoft_api_key"
+            android:title="@string/pref_title_modisoft_api_key"
+            android:inputType="textPassword"
+            android:summary="@string/pref_summary_modisoft_api_key" />
+
+        <SwitchPreferenceCompat
+            android:key="pref_modisoft_auto_sync"
+            android:title="@string/pref_title_modisoft_auto_sync"
+            android:summary="@string/pref_summary_modisoft_auto_sync"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="pref_modisoft_sync_interval_hours"
+            android:title="@string/pref_title_modisoft_sync_interval"
+            android:summary="@string/pref_summary_modisoft_sync_interval"
+            android:defaultValue="24"
+            android:inputType="number"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

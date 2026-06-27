@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary brand colour — deep teal for retail/POS context -->
+    <color name="primary">#006874</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#97F0FF</color>
+    <color name="on_primary_container">#001F24</color>
+
+    <!-- Secondary -->
+    <color name="secondary">#4A6267</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#CDE7EC</color>
+    <color name="on_secondary_container">#051F23</color>
+
+    <!-- Surface / background -->
+    <color name="background">#FBFCFC</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#191C1D</color>
+    <color name="on_surface_variant">#3F484A</color>
+
+    <!-- Error -->
+    <color name="error">#BA1A1A</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="error_container">#FFDAD6</color>
+    <color name="on_error_container">#410002</color>
+
+    <!-- Legacy XML attribute references (needed by some Material components) -->
+    <color name="colorPrimary">#006874</color>
+    <color name="colorPrimaryVariant">#004F58</color>
+    <color name="colorAccent">#006874</color>
+</resources>

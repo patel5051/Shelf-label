@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Retail Shelf Label Printer</string>
+    <string name="home_subtitle">Convenience Store Label Manager</string>
+
+    <!-- Home buttons -->
+    <string name="btn_modisoft_sync">Modisoft Pricebook Sync</string>
+    <string name="btn_scan_item">Scan Item</string>
+    <string name="btn_search_items">Search Items</string>
+    <string name="btn_import_csv">Import CSV</string>
+    <string name="btn_print_queue">Print Queue</string>
+    <string name="btn_print_history">Print History</string>
+    <string name="btn_settings">Settings</string>
+
+    <!-- Navigation labels -->
+    <string name="nav_scan">Scan Item</string>
+    <string name="nav_search">Search Items</string>
+    <string name="nav_item_detail">Item Detail</string>
+    <string name="nav_item_edit">Edit Item</string>
+    <string name="nav_label_preview">Print Label</string>
+    <string name="nav_csv_import">Import CSV</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_print_queue">Print Queue</string>
+    <string name="nav_print_history">Print History</string>
+    <string name="nav_bulk_print">Bulk Print</string>
+    <string name="nav_modisoft_sync">Modisoft Sync</string>
+
+    <!-- Print history -->
+    <string name="history_empty">No labels have been printed yet.\n\nScan or search for an item and print a label to get started.</string>
+    <string name="history_export_csv">Export CSV</string>
+    <string name="history_export_no_data">No history to export</string>
+    <string name="history_export_share_title">Share print history CSV</string>
+    <string name="history_clear_history">Clear History</string>
+    <string name="history_clear_confirm_title">Clear all history?</string>
+    <string name="history_clear_confirm_message">All print history will be permanently deleted. This cannot be undone.</string>
+    <string name="history_clear_confirm_button">Clear History</string>
+    <string name="history_cleared">Print history cleared</string>
+    <string name="history_search_hint">Search by name or barcode…</string>
+    <string name="history_filter_by_date">Filter by date</string>
+    <string name="history_date_clear">Clear</string>
+    <string name="history_date_picker_title">Select date range</string>
+    <plurals name="history_copies_printed">
+        <item quantity="one">%d copy</item>
+        <item quantity="other">%d copies</item>
+    </plurals>
+    <string name="history_bulk_job_label">Bulk job</string>
+    <string name="history_bulk_stats">%1$d items · %2$d labels total</string>
+    <string name="history_bulk_preview_overflow">%1$s · +%2$d more</string>
+    <string name="btn_reprint_job">Reprint job</string>
+    <string name="btn_reprint">Reprint</string>
+
+    <!-- Home — recent bulk jobs card -->
+    <string name="home_recent_bulk_jobs_title">Recent bulk jobs</string>
+    <string name="home_see_all">See all</string>
+    <string name="home_recent_bulk_stats">%1$d items · %2$d labels</string>
+
+    <!-- Search -->
+    <string name="search_hint">Search by name or barcode…</string>
+    <string name="no_items_found">No items found. Tap + to add one.</string>
+    <string name="add_item">Add Item</string>
+
+    <!-- Item detail -->
+    <string name="label_barcode">Barcode</string>
+    <string name="label_department">Department</string>
+    <string name="label_size">Size / Unit</string>
+    <string name="item_not_found">Item Not Found</string>
+    <string name="not_found_barcode">Barcode: %1$s</string>
+    <string name="create_new_item">Create New Item</string>
+    <string name="print_label">Print Label Now</string>
+    <string name="add_to_queue">Add to Print Queue</string>
+    <string name="in_queue">In Queue — View Queue</string>
+    <string name="added_to_queue">Added to print queue</string>
+    <string name="view_queue">View</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+
+    <!-- Confirm delete dialog -->
+    <string name="confirm_delete_title">Delete Item?</string>
+    <string name="confirm_delete_message">This item will be permanently removed from the database.</string>
+    <string name="item_deleted">Item deleted</string>
+
+    <!-- Edit form hints -->
+    <string name="hint_barcode">Barcode (UPC / EAN / CODE128)</string>
+    <string name="hint_description">Item Description</string>
+    <string name="hint_price">Price</string>
+    <string name="hint_department">Department / Category (optional)</string>
+    <string name="hint_size">Size / Unit (optional)</string>
+
+    <!-- CSV import -->
+    <string name="csv_import_title">Import Items from CSV</string>
+    <string name="csv_import_hint">Select a CSV file with columns:\nbarcode, description, price, department, size\n\nExisting barcodes will be updated.</string>
+    <string name="choose_csv_file">Choose CSV File</string>
+    <string name="import_complete_title">Import Complete</string>
+    <string name="import_summary">Added: %1$d  |  Updated: %2$d  |  Errors: %3$d</string>
+    <string name="import_error_title">Import Error</string>
+
+    <!-- Label preview / print -->
+    <string name="label_preview_title">Label Preview</string>
+    <string name="copies_label">Copies</string>
+    <string name="test_print">Print Test Label</string>
+    <string name="print_success">Printed %1$d label(s)</string>
+    <string name="test_print_success">Test label sent to printer</string>
+    <string name="print_error">Print failed</string>
+
+    <!-- Print queue -->
+    <string name="queue_empty">No items in the queue.\n\nAdd items from the Item Detail screen.</string>
+    <string name="print_all">Print All</string>
+    <string name="print_all_count">Print All (%1$d labels)</string>
+    <string name="print_partial">Printed %1$d labels — %2$d failed: %3$s</string>
+    <string name="bulk_item_removed">%1$s removed — Undo</string>
+    <string name="undo">Undo</string>
+    <string name="clear_queue">Clear Queue</string>
+    <string name="clear_queue_title">Clear Queue?</string>
+    <string name="clear_queue_message">All items will be removed from the print queue.</string>
+    <string name="clear_all">Clear All</string>
+    <string name="clear_all_title">Clear all items?</string>
+    <string name="clear_all_message">All %1$d items will be removed from this bulk print. This cannot be undone.</string>
+
+    <!-- Scan -->
+    <string name="scan_ready_title">Ready to Scan</string>
+    <string name="scan_ready_hint">Point the SUNMI L3 scanner at a barcode and press the hardware trigger button.\n\nOr tap below to trigger a software scan.</string>
+    <string name="trigger_scan">Trigger Scan</string>
+
+    <!-- Settings -->
+    <string name="pref_title_store_name">Store Name</string>
+    <string name="pref_summary_store_name">Printed at the top of every label</string>
+    <string name="pref_title_currency">Currency Symbol</string>
+    <string name="pref_title_label_width">Label Width (mm)</string>
+    <string name="pref_title_label_height">Label Height (mm)</string>
+    <string name="pref_title_barcode_type">Barcode Format</string>
+    <string name="pref_title_printer_mode">Printer Mode</string>
+    <string name="pref_title_default_copies">Default Copies</string>
+    <string name="open_settings">Open Settings</string>
+
+    <!-- History settings -->
+    <string name="pref_cat_history">History</string>
+    <string name="pref_title_bulk_history_retention">Keep bulk print history for</string>
+    <string name="pref_summary_bulk_history_retention">Bulk jobs older than this are deleted automatically</string>
+
+    <string-array name="bulk_history_retention_entries">
+        <item>30 days</item>
+        <item>60 days</item>
+        <item>90 days</item>
+    </string-array>
+    <string-array name="bulk_history_retention_values">
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+    </string-array>
+
+    <!-- Modisoft Sync settings -->
+    <string name="pref_cat_modisoft">Modisoft Pricebook Sync</string>
+    <string name="pref_title_modisoft_sync_mode">Sync Method</string>
+    <string name="pref_title_modisoft_api_base_url">API Base URL</string>
+    <string name="pref_title_modisoft_store_id">Store ID</string>
+    <string name="pref_title_modisoft_api_key">API Key / Token</string>
+    <string name="pref_summary_modisoft_api_key">Stored securely in app preferences</string>
+    <string name="pref_title_modisoft_auto_sync">Auto-Sync on Launch</string>
+    <string name="pref_summary_modisoft_auto_sync">Automatically sync pricebook when the app opens (API mode only)</string>
+    <string name="pref_title_modisoft_sync_interval">Auto-Sync Interval (hours)</string>
+    <string name="pref_summary_modisoft_sync_interval">Minimum hours between automatic syncs</string>
+
+    <!-- Modisoft Sync screen -->
+    <string name="modisoft_sync_mode_label">How should the app get pricebook data?</string>
+    <string name="modisoft_mode_api">API — pull automatically from Modisoft</string>
+    <string name="modisoft_mode_csv">CSV Import — use a Modisoft-exported spreadsheet</string>
+    <string name="modisoft_mode_manual">Manual — enter items by hand (no sync)</string>
+
+    <string name="modisoft_api_credentials_heading">API Credentials Required</string>
+    <string name="modisoft_api_credentials_info">Enter your Modisoft API base URL, Store ID, and API key in Settings. Contact Modisoft support to obtain API access for your account.</string>
+
+    <string name="modisoft_csv_heading">Modisoft CSV / Excel Export</string>
+    <string name="modisoft_csv_info">Export your pricebook from the Modisoft back-office portal and select the file below.\n\nAuto-detects columns: UPC, Item Name, Retail Price, Department, Size, Cost, and more.</string>
+    <string name="choose_pricebook_csv">Choose Pricebook File</string>
+    <string name="no_file_selected">No file selected</string>
+    <string name="no_file_selected_error">Please choose a CSV file first</string>
+
+    <string name="modisoft_manual_heading">Manual / Offline Mode</string>
+    <string name="modisoft_manual_info">No automatic sync is available in this mode. Items can be added or edited individually from the Search screen, or imported using the generic CSV import.\n\nSwitch to API or CSV mode once you have Modisoft export access.</string>
+
+    <string name="last_sync_never">Last sync: Never</string>
+    <string name="last_sync_at">Last sync: %1$s</string>
+    <string name="sync_now">Sync Now</string>
+    <string name="syncing">Syncing…</string>
+
+    <!-- Sync log -->
+    <string name="sync_log_heading">Sync History</string>
+    <string name="sync_log_empty">No sync history yet</string>
+    <string name="sync_running">Sync in progress…</string>
+    <string name="sync_summary">+%1$d added  ·  %2$d updated  ·  %3$d unchanged  ·  %4$d errors</string>
+
+    <!-- Barcode type entries -->
+    <string-array name="barcode_type_entries">
+        <item>CODE 128 (alphanumeric)</item>
+        <item>EAN-13 (13 digits)</item>
+        <item>UPC-A (12 digits)</item>
+    </string-array>
+    <string-array name="barcode_type_values">
+        <item>CODE128</item>
+        <item>EAN13</item>
+        <item>UPC_A</item>
+    </string-array>
+
+    <!-- Printer mode entries -->
+    <string-array name="printer_mode_entries">
+        <item>Receipt Paper (ESC/POS)</item>
+        <item>Label Paper (TSPL / ZPL)</item>
+    </string-array>
+    <string-array name="printer_mode_values">
+        <item>receipt</item>
+        <item>label</item>
+    </string-array>
+
+    <!-- Modisoft sync mode entries -->
+    <string-array name="modisoft_sync_mode_entries">
+        <item>API (automatic)</item>
+        <item>CSV Import (manual file)</item>
+        <item>Manual (no sync)</item>
+    </string-array>
+    <string-array name="modisoft_sync_mode_values">
+        <item>api</item>
+        <item>csv</item>
+        <item>manual</item>
+    </string-array>
+</resources>

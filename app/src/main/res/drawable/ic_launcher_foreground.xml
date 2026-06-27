@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Price tag icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M68,20 L40,20 C37.8,20 35.8,20.8 34.3,22.3 L21.3,35.3 C19.8,36.8 19,38.8 19,41 L19,70 C19,74.4 22.6,78 27,78 L68,78 C72.4,78 76,74.4 76,70 L76,26 C76,22.7 73.3,20 68,20 Z M59,36 C61.2,36 63,37.8 63,40 C63,42.2 61.2,44 59,44 C56.8,44 55,42.2 55,40 C55,37.8 56.8,36 59,36 Z" />
+    <!-- Barcode lines -->
+    <rect android:x="28" android:y="52" android:width="3" android:height="16" android:fillColor="#006874" />
+    <rect android:x="33" android:y="52" android:width="2" android:height="16" android:fillColor="#006874" />
+    <rect android:x="37" android:y="52" android:width="4" android:height="16" android:fillColor="#006874" />
+    <rect android:x="43" android:y="52" android:width="2" android:height="16" android:fillColor="#006874" />
+    <rect android:x="47" android:y="52" android:width="3" android:height="16" android:fillColor="#006874" />
+    <rect android:x="52" android:y="52" android:width="2" android:height="16" android:fillColor="#006874" />
+    <rect android:x="56" android:y="52" android:width="4" android:height="16" android:fillColor="#006874" />
+    <rect android:x="62" android:y="52" android:width="2" android:height="16" android:fillColor="#006874" />
+</vector>
